@@ -24,14 +24,17 @@ const PORT = process.env.PORT || 5000;
 
 // CORS configuration: Allow multiple Vite dev ports
 const allowedOrigins = [
-  'http://localhost:5173', // Default Vite port
-  'http://localhost:5174', // Fallback Vite port
-  'http://localhost:5175', // Another fallback
-  'http://localhost:3000', // React dev server
+  'http://localhost:5173',
+  'http://localhost:5174',
+  'http://localhost:5175',
+  'http://localhost:3000',
   'http://127.0.0.1:5173',
   'http://127.0.0.1:5174',
   'http://127.0.0.1:5175',
   'http://127.0.0.1:3000',
+
+  // Production frontend
+  'https://tech-blog-sage-zeta.vercel.app',
 ];
 
 const corsOptions = {
